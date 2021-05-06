@@ -26,16 +26,16 @@ export const fetchWorkout = (id) => {
 
 export const createWorkout = (data) => {
     return dispatch => {
-      fetch('http://localhost:3001/workouts', {
+        fetch('http://localhost:3001/workouts', {
         method: 'POST',
         headers: {
-          'content-type': 'application/json'
+            'content-type': 'application/json'
         },
         body: JSON.stringify({workout: data}),
-      })
-      .then(response => response.json())
-      .then(data => {
+        })
+        .then(response => response.json())
+        .then(data => {
         dispatch({ type: 'CREATE_WORKOUT', workout: data })
-      })
+        })
     }
-  }
+}
