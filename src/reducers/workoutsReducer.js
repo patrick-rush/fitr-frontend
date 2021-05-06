@@ -12,6 +12,12 @@ const manageWorkouts = (state = { list: [], current: {}, loading: false }, actio
                 current: state.current,
                 loading: true
             }
+        case 'GET_WORKOUTS':
+            return {
+                ...state,
+                list: action.workouts.reverse(),
+                loading: false
+            }
         default:
             return state;
     }
