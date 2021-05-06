@@ -12,6 +12,8 @@ const manageWorkouts = (state = { list: [], current: {}, loading: false }, actio
                 current: state.current,
                 loading: true
             }
+        default:
+            return state;
     }
 }
 
