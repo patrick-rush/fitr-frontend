@@ -10,3 +10,16 @@ export const fetchWorkouts = () => {
         })
     }
 }
+
+export const fetchWorkout = (id) => {
+    return dispatch => {
+      dispatch({ type: 'LOADING_WORKOUT'})
+      fetch(`http://localhost:3001/workouts/${id}`)
+      .then(response => {
+        return response.json()
+      })
+      .then(responseJSON => {
+        dispatch({ type: 'GET_WORKOUT', workout: responseJSON })
+      })
+    }
+}
