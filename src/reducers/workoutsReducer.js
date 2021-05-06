@@ -23,6 +23,11 @@ const manageWorkouts = (state = { list: [], current: {}, loading: false }, actio
                 ...state,
                 list: [ action.workout, ...state.list ]
             }
+        case 'CREATE_WORKOUT':
+        return {
+            ...state,
+            list: [ action.workout, ...state.list ]
+        }
         default:
             return state;
     }
