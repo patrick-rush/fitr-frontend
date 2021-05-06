@@ -6,6 +6,12 @@ const manageWorkouts = (state = { list: [], current: {}, loading: false }, actio
                 list: [...state.list],
                 loading: true
             }
+        case 'LOADING_WORKOUT':
+            return {
+                ...state,
+                current: state.current,
+                loading: true
+            }
     }
 }
 
