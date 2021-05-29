@@ -10,7 +10,7 @@ const HomeContainer = ({ fetchWorkouts, workouts, loading, initialLoad }) => {
     
     console.log("workouts =", workouts)
     
-    if (!initialLoad || loading) {
+    if (loading) {
         return (
             <div>Loading Thingy</div>
         )
