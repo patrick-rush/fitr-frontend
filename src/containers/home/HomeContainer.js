@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchWorkouts } from '../../actions/workoutActions';
 
-const HomeContainer = ({ fetchWorkouts, workouts, loading, initialLoad }) => {
+const HomeContainer = ({ fetchWorkouts, workouts, loading }) => {
     
     useEffect(() => {
         fetchWorkouts();
@@ -10,7 +10,7 @@ const HomeContainer = ({ fetchWorkouts, workouts, loading, initialLoad }) => {
     
     console.log("workouts =", workouts)
     
-    if (!initialLoad || loading) {
+    if (loading) {
         return (
             <div>Loading Thingy</div>
         )
@@ -29,7 +29,6 @@ const mapStateToProps = state => {
     return {
         workouts: state.workouts.list,
         loading: state.workouts.loading,
-        initialLoad: state.workouts.initialLoad
     }
 }
 
