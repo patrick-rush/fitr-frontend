@@ -1,4 +1,4 @@
-const manageWorkouts = (state = { list: [], current: {}, loading: false }, action) => {
+const manageWorkouts = (state = { list: [], current: {}, initialLoad: false, loading: true }, action) => {
     switch(action.type) {
         case 'LOADING_WORKOUTS':
             return {
@@ -16,6 +16,7 @@ const manageWorkouts = (state = { list: [], current: {}, loading: false }, actio
             return {
                 ...state,
                 list: action.workouts.reverse(),
+                initialLoad: true,
                 loading: false
             }
         case 'GET_WORKOUT':
