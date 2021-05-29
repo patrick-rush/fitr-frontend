@@ -7,6 +7,7 @@ import {
 import Nav from './components/nav/Nav';
 import HomeContainer from './containers/home/HomeContainer';
 import ProfileContainer from './containers/profile/ProfileContainer';
+import PostShowContainer from './containers/post/PostShowContainer';
 
 import './App.css';
 
@@ -17,9 +18,9 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={HomeContainer} ></Route>
+          <Route path="/:slug/posts/:postId" component={PostShowContainer} ></Route>
           <Route path="/:slug" component={ProfileContainer} ></Route>
           {/* <Route exact path="/:slug" component={ProfileContainer} ></Route>
-          <Route path="/:slug/posts/:postId" component={PostShowContainer} ></Route>
           <Route path="/:slug/workouts" component={WorkoutsContainer} ></Route>
           <Route path="/:slug/workouts/:workoutId" component={WorkoutShowContainer} ></Route>
           <Route path="/workout/new" component={NewWorkoutContainer} ></Route> */}
