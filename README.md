@@ -11,7 +11,7 @@ Click [here](https://github.com/patrick-rush/fitr-backend) to view backend repo.
 - [Description](#description)
 - [Instructions](#instructions)
 - [License](#license)
-- [Author Info](#author-info)
+- [Author Info](#authors)
 
 ---
 
@@ -25,7 +25,7 @@ Fitr is a fitness app with a social twist. Users have a profile, followers, work
 - React
 - TailwindCSS
 
-[Back To The Top](#fitr-backend)
+[Back To The Top](#fitr-frontend)
 
 ---
 
@@ -37,7 +37,7 @@ Requires Node.js
 1. Fork and clone this repository
 2. Run `npm start` to start yourserver
 
-[Back To The Top](#fitr-backend)
+[Back To The Top](#fitr-frontend)
 
 ---
 
@@ -65,7 +65,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#fitr-backend)
+[Back To The Top](#fitr-frontend)
 
 ---
 
@@ -83,4 +83,4 @@ Brandon Marrero
 - Twitter - [@branmar97](https://twitter.com/branmar97)
 - Website - [Brandon Marrero](https://brandonmarrero.com)
 
-[Back To The Top](#fitr-backend)
+[Back To The Top](#fitr-frontend)
