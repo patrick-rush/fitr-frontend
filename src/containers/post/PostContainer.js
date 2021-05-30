@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PostShowContainer = () => {
+const PostContainer = () => {
     return (
         <div>
             <div>
@@ -23,4 +23,4 @@ const PostShowContainer = () => {
     )
 }
 
-export default PostShowContainer;
+export default PostContainer;
