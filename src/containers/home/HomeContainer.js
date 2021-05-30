@@ -1,3 +1,9 @@
+// Should get Posts from Redux store
+// Should import Widget components
+// Renders LeftWidgets, Feed and RightWidgets components
+// Pass Posts to Feed as props
+// Pass Widget components to LeftWidgets and RightWidgets as props
+
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchWorkouts } from '../../actions/workoutActions';
