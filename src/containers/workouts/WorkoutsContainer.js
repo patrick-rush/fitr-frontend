@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 const WorkoutsContainer = () => {
     return ( 
@@ -10,4 +11,4 @@ const WorkoutsContainer = () => {
      );
 }
  
-export default WorkoutsContainer;
+export default connect(null)(WorkoutsContainer);
