@@ -7,10 +7,26 @@ const WorkoutsContainer = ({ workouts, loading, fetchWorkouts }) => {
         fetchWorkouts();
     },[])
     
+    const renderWorkouts = () => {
+        return workouts.map(workout => {
+            return (
+                <div>
+                    <h1>{workout.user.name}</h1>
+                    <h3>Exercises</h3>
+                    {workout.exercises.map(exercise => {
+                        return (
+                            <p>{exercise.name}</p>
+                        )
+                    })}
+                </div>
+            )
+        })
+    } 
+
     return ( 
         <div>
             LeftWidgets Thingy
-            WorkoutsContainer
+            {renderWorkouts()}
             RightWidgets Thingy
         </div>
      );
