@@ -19,9 +19,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomeContainer} ></Route>
           <Route path="/:slug/posts/:postId" component={PostContainer} ></Route>
-          <Route path="/:slug" component={ProfileContainer} ></Route>
           <Route exact path="/:slug" component={ProfileContainer} ></Route>
-          <Route path="/:slug/workouts" component={WorkoutsContainer} ></Route>
+          <Route exact path="/:slug/workouts" component={WorkoutsContainer} ></Route>
           {/* <Route path="/:slug/workouts/:workoutId" component={WorkoutShowContainer} ></Route>
           <Route path="/workout/new" component={NewWorkoutContainer} ></Route> */}
         </Switch>
