@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 const WorkoutsContainer = ({ workouts, loading, fetchWorkouts }) => {
+    useEffect(() => {
+        fetchWorkouts();
+    },[])
+    
     return ( 
         <div>
             LeftWidgets Thingy
