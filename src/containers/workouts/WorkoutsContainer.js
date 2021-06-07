@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import { fetchWorkouts } from '../../actions/workoutActions';
 
 const WorkoutsContainer = ({ workouts, loading, fetchWorkouts }) => {
     useEffect(() => {
